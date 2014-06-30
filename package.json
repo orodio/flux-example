@@ -1,0 +1,31 @@
+{
+  "name": "flux",
+  "version": "0.0.0",
+  "description": "flux example",
+  "main": "server.js",
+  "scripts": {
+    "build": "browserify dynamic/app.js -o static/scripts.js -vd",
+    "watch": "watchify dynamic/app.js -o static/scripts.js -vd",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "orodio",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "~1.0.8",
+    "express": "~4.4.5"
+  },
+  "devDependencies": {
+    "envify": "~1.2.1",
+    "react": "~0.10.0",
+    "es6-promise": "~1.0.0",
+    "reactify": "~0.13.1",
+    "browserify": "~4.2.0",
+    "watchify": "~0.10.2"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
