@@ -1,7 +1,6 @@
 /** @jsx React.DOM */
 
-var React = require('react');
-
+var React   = require('react');
 var TodoApp = require('./components/TodoApp.react');
 
 React.renderComponent(

@@ -14,9 +14,9 @@ function getTodoState() {
 }
 
 var TodoApp = React.createClass({
-  getInitialState: function () { return getTodoState(); },
-  componentDidMount: function () { TodoStore.addChangeListener( this._onChange ); },
-  componentWillUnmount: function () { TodoStore.removeChangeListener( this._onChange ); },
+  getInitialState      : function () { return getTodoState(); },
+  componentDidMount    : function () { TodoStore.addChangeListener( this._onChange ); },
+  componentWillUnmount : function () { TodoStore.removeChangeListener( this._onChange ); },
 
   render: function () {
     return (
